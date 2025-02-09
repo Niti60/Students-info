@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Book</title>
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="style.css">
+ 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="contain">
+        <h1>Students Information Book</h1>
+        <div class="stud">
+            <label for="stdname">Student Name</label>
+            <input type="text" id="stdname" placeholder="Name">
+            <span id="nameErr"></span>
+
+            <label for="stdname">Roll No</label>
+            <input type="number" id="stdroll" placeholder="Roll No.">
+            <span id="rollErr"></span>
+
+            <label for="stdname">Marks out of 100</label>
+            <input type="number" id="stdmark" placeholder="Marks">
+            <span id="markErr"></span>
+
+        </div>
+        <button class="btun" onclick="sub()" type="submit">Submit</button>
+        <div id="content" >
+            <h1>Students List</h1>
+            <div class="M-Titles">
+                <h3>Name</h3>
+                <h3>Roll No</h3>
+                <h3>Marks</h3>
+                <h3>Grade</h3>
+                <h3>Delete</h3>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
