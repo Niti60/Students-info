@@ -2,7 +2,7 @@ function sub() {
     let nameErr = document.querySelector("#nameErr");
     let rollErr = document.querySelector("#rollErr");
     let markErr = document.querySelector("#markErr");
-    let NameStudent = document.querySelector("#stdname").value.trim();
+    let NameStudent = document.querySelector("#stdname").value.trim().replace(/ /g,"<br>");
     let RollStudent = document.querySelector("#stdroll").value.trim();
     let MarkStudent = document.querySelector("#stdmark").value.trim();
     let contain = document.querySelector("#content");
